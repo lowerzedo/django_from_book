@@ -1,8 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
-
-
 from django.test import SimpleTestCase
+
 class HomepageTests(SimpleTestCase):
     def test_url_exists_at_correct_location(self):
         response = self.client.get("/")
